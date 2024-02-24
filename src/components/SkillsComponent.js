@@ -31,8 +31,8 @@ const SkillsComponent = () => {
     return (
         <Container fluid className='skills-wallpaper p-5' >
             <Container fluid className='p-5 mx-auto text-center' style={{ backgroundColor: "#0e1111", borderRadius: "70px", width: "80%" }}>
-                <p className='text-white text-capitalize' style={{ fontSize: "5rem" }}>skills</p>
-                <p className="text-secondary text-capitalize fs-3 fw-1">you can see my skills here</p>
+                <p className='text-white text-capitalize' style={{ fontSize: "4vw" }}>skills</p>
+                <p className="text-secondary text-capitalize fw-1" style={{ fontSize: "2vw" }}>you can see my skills here</p>
                 <Slider className='skills-carousel mx-auto my-5 p-3' {...settings}>
                     <div>
                         <Container className='mx-auto'>

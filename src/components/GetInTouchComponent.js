@@ -25,13 +25,13 @@ const GetInTouchComponent = () => {
             </Row>
 
             <Container className="border border-white p-5 bg-white" style={{ borderRadius: "70px",position: "absolute" ,bottom: "-131px" }}>
-                <Row lg={2} sm={1} className="d-flex flex-wrap justify-content-center align-items-center">
+                <Row lg={2} sm={1} xs={1} className="d-flex flex-wrap justify-content-center align-items-">
                     <Col>
                         <p className="text-capitalize fs-3 text-start text-break" >See my projects at once & leave here your e-mail address</p>
                     </Col>
-                    <Col className="leave-email-input d-flex  align-items-center">
+                    <Col className="leave-email-input d-flex pe-0">
                         <input type="email" className="email-input fs-4 flex-grow-1" placeholder="Email Address" />
-                        {/* <input type="submit" className="email-submit-button" value="Submit" /> */}
+                        <input type="submit" className="email-submit-button px-2" value="Submit" />
                     </Col>
                 </Row>
             </Container>
