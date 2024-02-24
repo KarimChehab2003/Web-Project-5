@@ -7,12 +7,12 @@ import Col from 'react-bootstrap/Col';
 const FooterComponent = () => {
     return (
         <Container fluid style={{backgroundColor: "black"}}>
-            <Row className='d-flex justify-content-between mx-auto' style={{width: "80%",paddingTop: "200px"}}>
-                <Col className='text-white text-uppercase fs-1 d-flex justify-content-start align-items-center '>
+            <Row className='d-flex flex-wrap justify-content-between mx-auto' style={{width: "80%",paddingTop: "200px"}}>
+                <Col className='text-white text-uppercase fs-1 d-flex justify-content-lg-start justify-content-xs-center align-items-center '>
                     <p>logo</p>
                 </Col>
                 <Col className='d-flex flex-column'>
-                    <Container className='d-flex flex-row justify-content-end mb-3'>
+                    <Container className='d-flex flex-row justify-content-lg-end justify-content-xs-center mb-3'>
                         <a href="#LinkedIn" className='mx-1'>
                             <FontAwesomeIcon className="fs-3 py-2 px-3 border border-white rounded-circle text-white icon" icon={faLinkedinIn} />
                         </a>
