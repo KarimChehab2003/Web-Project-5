@@ -271,7 +271,7 @@
 
 
 .title-right {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: start;
   color: white;
   margin-bottom: 50px;
@@ -295,7 +295,7 @@
   order: 0;
   font-size: 20px;
   margin: 10px;
-  padding: 20px 10px;
+  padding: 10px 5px;
   border: 1px solid white;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.1);

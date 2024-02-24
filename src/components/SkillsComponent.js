@@ -21,7 +21,7 @@ const SkillsComponent = () => {
             {
                 breakpoint: 768, 
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 },
             },
         ],
@@ -31,12 +31,12 @@ const SkillsComponent = () => {
     return (
         <Container fluid className='skills-wallpaper p-5' >
             <Container fluid className='p-5 mx-auto text-center' style={{ backgroundColor: "#0e1111", borderRadius: "70px", width: "80%" }}>
-                <p className='text-white text-capitalize' style={{ fontSize: "4vw" }}>skills</p>
-                <p className="text-secondary text-capitalize fw-1" style={{ fontSize: "2vw" }}>you can see my skills here</p>
+                <p className='text-white text-capitalize' style={{ fontSize: "3rem" }}>skills</p>
+                <p className="text-secondary text-capitalize fw-1" style={{ fontSize: "1.3rem" }}>you can see my skills here</p>
                 <Slider className='skills-carousel mx-auto my-5 p-3' {...settings}>
                     <div>
                         <Container className='mx-auto'>
-                            <GradientSVG />
+                            <GradientSVG/>
                             <CircularProgressbar strokeWidth={8} value={95} text="95%" styles={{
                                 path: { stroke: `url(#${idCSS})`, height: "100%" },
                                 trail: {
@@ -48,11 +48,11 @@ const SkillsComponent = () => {
                             }}
                             />
                         </Container>
-                        <p class="fs-3 text-white mt-5 text-break">FrontEnd Development</p>
+                        <p class="text-white mt-5 text-break" style={{fontSize: "1.5rem"}}>FrontEnd Development</p>
                     </div>
                     <div>
                         <Container className='mx-auto'>
-                            <GradientSVG />
+                            <GradientSVG/>
                             <CircularProgressbar strokeWidth={8} value={80} text="80%" styles={{
                                 path: { stroke: `url(#${idCSS})`, height: "100%" },
                                 trail: {
@@ -64,7 +64,7 @@ const SkillsComponent = () => {
                             }}
                             />
                         </Container>
-                        <p class="fs-3 text-white mt-5 text-break">Data Science</p>
+                        <p class="text-white mt-5 text-break" style={{fontSize: "1.5rem"}}>Data Science</p>
                     </div>
                     <div>
                         <Container className='mx-auto'>
@@ -80,7 +80,7 @@ const SkillsComponent = () => {
                             }}
                             />
                         </Container>
-                        <p class="fs-3 text-white mt-5 text-break">BackEnd Development</p>
+                        <p class="text-white mt-5 text-break" style={{fontSize: "1.5rem"}}>BackEnd Development</p>
                     </div>
                     <div>
                         <Container className='mx-auto'>
@@ -96,7 +96,7 @@ const SkillsComponent = () => {
                             }}
                             />
                         </Container>
-                        <p class="fs-3 text-white mt-5 text-break">Algorithms</p>
+                        <p class="text-white mt-5 text-break" style={{fontSize: "1.5rem"}}>Algorithms</p>
                     </div>
                 </Slider>
             </Container>

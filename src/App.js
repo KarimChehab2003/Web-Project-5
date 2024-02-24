@@ -8,7 +8,7 @@ import SkillsComponent from "./components/SkillsComponent";
 import ProjectsComponent from './components/ProjectsComponent';
 import GetInTouchComponent from './components/GetInTouchComponent';
 import FooterComponent from "./components/FooterComponent";
-
+import { Container } from 'react-bootstrap';
 function App() {
   const homeRef = useRef(null);
   const skillsRef = useRef(null);

@@ -46,7 +46,7 @@ const HomeComponent = () => {
         <Container fluid className='home-container d-flex justify-content-center pt-5'>
             <Row xl={2} sm={1} xs={1} className='position-relative' style={{ width: "80%", height: "100%" }}>
                 <Col className='d-flex flex-column flex-wrap align-items-start mt-5'>
-                    <span className="text-white text-start mb-3 p-3 fs-3 text-capitalize border border-2 border-white welcome-gradient">Welcome all to my profile</span>
+                    <span className="text-white text-start mb-3 p-3 fs-4 text-capitalize border border-2 border-white welcome-gradient">Welcome all to my profile</span>
                     <p className="text-white text-start" style={{ width: "100%", fontSize: "5vw" }}>
                         Hi! I'm Karim Fouad Chehab, {introText}
                         <span className='textBar'>|</span>

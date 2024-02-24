@@ -23,7 +23,7 @@ const FooterComponent = () => {
                             <FontAwesomeIcon className="fs-3 py-2 px-3 border border-white rounded-circle text-white icon" icon={faInstagram} />
                         </a>
                     </Container>
-                    <p className="text-white text-end text-capitalize px-2">--Copyright 2024-- all rights reserved here by karim fouad chehab</p>
+                    <p className="text-white text-lg-end text-sm-start text-capitalize px-2">--Copyright 2024-- all rights reserved here by karim fouad chehab</p>
                 </Col>
             </Row>
         </Container>
