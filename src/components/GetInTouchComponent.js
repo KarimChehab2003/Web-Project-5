@@ -7,30 +7,30 @@ import Image from 'react-bootstrap/Image';
 const GetInTouchComponent = () => {
     return (
         <Container fluid className='position-relative d-flex flex-wrap justify-content-center py-5 position-relative' style={{ backgroundImage: "linear-gradient(to right, #b06ab3, #4568dc)" }}>
-            <Row xl={2} sm={1} style={{ width: "80%", height: "100%", marginBottom: "131px" }}>
+            <Row lg={2} sm={1} style={{ width: "80%", height: "100%", marginBottom: "131px" }}>
                 <Col className="d-flex align-items-center">
                     <Image src={programmer} fluid />
                 </Col>
-                <Col className=' py-2 d-flex flex-column flex-wrap align-items-center'>
-                    <p className="title-right">Get In Touch</p>
+                <Col className='d-flex flex-column flex-wrap  py-2'>
+                    <p className="title-right text-center">Get In Touch</p>
                     <form className="form-right">
                         <input type="text" placeholder="First Name" className="input-right" />
                         <input type="text" placeholder="Last Name" className="input-right" />
                         <input type="text" placeholder="Email Address" className="input-right" />
                         <input type="text" placeholder="Phone No." className="input-right" />
-                        <textarea className="textarea-right" placeholder="Message" />
-                        <input type="submit" className="send-right" value="Send" />
+                        <textarea className="textarea-right" rows="5" placeholder="Message" />
                     </form>
+                        <input type="submit" className="send-right mx-2" value="Send" />
                 </Col>
             </Row>
 
-            <Container className="border border-white p-5 d-flex flex-wrap justify-content-center align-items-center bg-white" style={{ borderRadius: "70px",position: "absolute" ,bottom: "-131px" }}>
-                <Row xl={2} sm={1}>
+            <Container className="border border-white p-5 bg-white" style={{ borderRadius: "70px",position: "absolute" ,bottom: "-131px" }}>
+                <Row lg={2} sm={1} className="d-flex flex-wrap justify-content-center align-items-center">
                     <Col>
-                        <p className="text-capitalize fs-1 text-start" >See my projects at once & leave here your e-mail address</p>
+                        <p className="text-capitalize fs-3 text-start text-break" >See my projects at once & leave here your e-mail address</p>
                     </Col>
-                    <Col className="leave-email-input d-flex justify-content-center align-items-center">
-                        <input type="email" className="email-input" placeholder="Email Address" />
+                    <Col className="leave-email-input d-flex  align-items-center">
+                        <input type="email" className="email-input fs-4 flex-grow-1" placeholder="Email Address" />
                         <input type="submit" className="email-submit-button" value="Submit" />
                     </Col>
                 </Row>

@@ -12,7 +12,7 @@ const FooterComponent = () => {
                     <p>logo</p>
                 </Col>
                 <Col className='d-flex flex-column'>
-                    <Container className='d-flex flex-row justify-content-end'>
+                    <Container className='d-flex flex-row justify-content-end mb-3'>
                         <a href="#LinkedIn" className='mx-1'>
                             <FontAwesomeIcon className="fs-3 py-2 px-3 border border-white rounded-circle text-white icon" icon={faLinkedinIn} />
                         </a>
