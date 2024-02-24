@@ -26,9 +26,9 @@ const Projects = () => {
                     <p className="projects-header-title">My Projects</p>
                     <p className="projects-header-desc">My name is Karim, I live in Cairo. This is my react project</p>
                     <div className="projects-header-sections">
-                        <button className="projects-header-button button-1 bn632-hover bn27" onClick={() => handleButtonClick("button-1")} style={{fontSize: "1rem"}}>1st Section</button>
-                        <button className="projects-header-button button-2 bn632-hover bn27" onClick={() => handleButtonClick("button-2")} style={{fontSize: "1rem"}}>2nd Section</button>
-                        <button className="projects-header-button button-3 bn632-hover bn27" onClick={() => handleButtonClick("button-3")} style={{fontSize: "1rem"}}>3rd Section</button>
+                        <button className="projects-header-button button-1 bn632-hover bn27" onClick={() => handleButtonClick("button-1")} style={{fontSize: "0.8rem"}}>1st Section</button>
+                        <button className="projects-header-button button-2 bn632-hover bn27" onClick={() => handleButtonClick("button-2")} style={{fontSize: "0.8rem"}}>2nd Section</button>
+                        <button className="projects-header-button button-3 bn632-hover bn27" onClick={() => handleButtonClick("button-3")} style={{fontSize: "0.8rem"}}>3rd Section</button>
                     </div>
                 </div>
                 
