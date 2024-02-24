@@ -1,38 +1,428 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.connectButton {
+  display: inline-block !important;
+  padding: 0.9rem 1.8rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+  border: 3px solid white !important;
+  position: relative !important;
+  background-color: transparent !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+  border-radius: 0px !important;
+}
+
+.connectButton::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: white !important;
+  transform: translateX(-100%) !important;
+  transition: all .3s !important;
+  z-index: -1 !important;
+}
+
+.connectButton:hover::before {
+  transform: translateX(0) !important;
+}
+
+.connectButton:hover {
+  color: black !important;
+}
+
+.icon {
+  color: white;
+  background-color: #2c2b2b !important;
+}
+
+.icon:hover {
+  background: white !important;
+  color: black !important;
+}
+
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./imgs/cartoonSpace.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.home-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.welcome-gradient {
+  background-image: linear-gradient(to right, rgb(82, 3, 143), rgb(138, 2, 95)) !important;
+}
+
+
+.textBar {
+  display: inline-block;
+  color: #bdbdbd;
+  margin-left: -10px;
+  animation: blinkingBar 0.7s linear infinite both;
+}
+
+
+.astronaut {
+  animation: floating 3.5s linear infinite both;
+}
+
+.skills-wallpaper {
+  background-image: url("./imgs/blobScene.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skills-carousel {
+  width: 80%;
+}
+
+/* Styles for slick arrows */
+.slick-prev,
+.slick-next {
+  font-size: 20px;
+  color: #333;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #000;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.projects-container {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0px;
+}
+
+.projects-content {
+  width: 80%;
+  margin: 0px auto;
+  padding: 40px 0px;
+}
+
+.projects-header {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.projects-header-title {
+  color: white;
+  font-size: 3rem;
+  margin: 10px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.projects-header-desc {
+  color: rgb(178, 178, 178);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin: 15px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projects-header-sections {
+  width: 70%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  border: 2px solid darkgray;
+  background-color: darkgray;
+  border-radius: 30px;
+  ;
+}
+
+.projects-header-button {
+  flex-grow: 1;
+}
+
+.projects-header-button.button-1 {
+  border-radius: 30px 0px 0px 30px;
+}
+
+.projects-header-button.button-2 {
+  margin: 0px 1px;
+}
+
+.projects-header-button.button-3 {
+  border-radius: 0px 30px 30px 0px;
+}
+
+/* Styling for section buttons */
+.bn632-hover {
+  width: 160px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #121212;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+  background-image: linear-gradient(to right,
+      #f7186a,
+      #fbb03b);
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.visibility-on {
+  display: grid !important;
+}
+
+.visibility-off {
+  display: none !important;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+
+.projects-grid-element {
+  height: 350px;
+  border-radius: 50px;
+  border: 2px solid darkgray;
+  position: relative;
+}
+
+.projects-grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.tba {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.projects-grid-overlay {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-image: linear-gradient(to right, rgba(239, 98, 159, 0.9), rgba(238, 205, 163, 0.9));
+
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.projects-grid-element:hover .projects-grid-overlay {
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects-grid-overlay-text {
+  font-size: 2rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(250px);
+  transition: 0.4s;
+}
+
+.projects-grid-overlay-subtext {
+  font-size: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(250px);
+  transition: 0.4s;
+}
+
+.projects-grid-element:hover .projects-grid-overlay-text,
+.projects-grid-element:hover .projects-grid-overlay-subtext {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.last-section-container {
+  position: relative;
+}
+
+
+.title-right {
+  font-size: 4rem;
+  text-align: start;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.form-right {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr; /* Each column takes up 1 fraction of the available space */
+  gap: 15px;
+}
+
+.input-right,
+.textarea-right {
+  font-size: 20px;
+  padding: 20px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  padding-left: 20px;
+  transition: 0.2s ease;
+  outline: 1px solid white;
+}
+
+.input-right::placeholder,
+.textarea-right::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-right:focus,
+.textarea-right:focus {
+  color: black;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-right:focus::placeholder,
+.textarea-right:focus::placeholder {
+  color: black;
+}
+
+.textarea-right {
+  resize: none;
+  grid-area: 3 / 1 / 5 / 3;
+}
+
+.send-right {
+  color: black;
+  padding: 16px 32px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-right: 150px;
+  border: none;
+  margin-top: 50px;
+}
+
+.leave-email {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 65px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -150px;
+}
+
+.leave-email-input {
+  border: 2px solid #5e4dcd;
+  border-radius: 20px;
+}
+
+.email-input {
+  color: black;
+  font-size: 1.8rem;
+  border: none;
+  background-color: transparent;
+}
+
+.email-submit-button {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #b06ab3, #4568dc);
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.email-submit-button:hover {
+  background-color: #5e5dcd;
+}
+
+.email-input:focus,
+.email-input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
+
+
+@keyframes floating {
+  0% {
+    transform: translateY(-50px);
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes blinkingBar {
+  0%{
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+// App.js
 import './App.css';
+import React, { useRef } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarComponent from './components/NavbarComponent';
+import HomeComponent from './components/HomeComponent';
+import SkillsComponent from "./components/SkillsComponent";
+import ProjectsComponent from './components/ProjectsComponent';
+import GetInTouchComponent from './components/GetInTouchComponent';
+import FooterComponent from "./components/FooterComponent";
 
 function App() {
+  const homeRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+
+  const scrollToRef = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavbarComponent  scrollToRef={scrollToRef} homeRef={homeRef} skillsRef={skillsRef} projectsRef={projectsRef}  />
+      <div ref={homeRef}><HomeComponent /></div>
+      <div ref={skillsRef}><SkillsComponent /></div>
+      <div ref={projectsRef}><ProjectsComponent /></div>
+      <GetInTouchComponent />
+      <FooterComponent />
     </div>
   );
 }
