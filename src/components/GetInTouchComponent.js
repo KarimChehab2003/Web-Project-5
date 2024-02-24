@@ -31,7 +31,7 @@ const GetInTouchComponent = () => {
                     </Col>
                     <Col className="leave-email-input d-flex  align-items-center">
                         <input type="email" className="email-input fs-4 flex-grow-1" placeholder="Email Address" />
-                        <input type="submit" className="email-submit-button" value="Submit" />
+                        {/* <input type="submit" className="email-submit-button" value="Submit" /> */}
                     </Col>
                 </Row>
             </Container>
