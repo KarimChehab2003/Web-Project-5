@@ -20,15 +20,15 @@ const NavbarComponent = ({ scrollToRef, homeRef, skillsRef, projectsRef }) => {
                         <Nav.Link href="#Skills" className='mx-3 text-start' onClick={() => scrollToRef(skillsRef)}>Skills</Nav.Link>
                         <Nav.Link href="#Projects" className='mx-3 text-start' onClick={() => scrollToRef(projectsRef)}>Projects</Nav.Link>
                     </Nav>
-                    <Nav className='d-flex flex-row '>
-                        <Nav.Link href="#LinkedIn" className='mx-1'>
-                            <FontAwesomeIcon className="fs-3 py-2 px-3 border border-white rounded-circle text-white icon" icon={faLinkedinIn} />
+                    <Nav className='d-flex flex-row align-items-center'>
+                        <Nav.Link href="#LinkedIn">
+                            <FontAwesomeIcon className="fs-5 py-2 px-3 border border-white rounded-circle text-white icon" icon={faLinkedinIn} />
                         </Nav.Link>
-                        <Nav.Link href="#Facebook" className='mx-1'>
-                            <FontAwesomeIcon className="fs-3 py-2 px-3 border border-white rounded-circle text-white icon" icon={faFacebookF} />
+                        <Nav.Link href="#Facebook">
+                            <FontAwesomeIcon className="fs-5 py-2 px-3 border border-white rounded-circle text-white icon" icon={faFacebookF} />
                         </Nav.Link>
-                        <Nav.Link href="#Instagram" className=' mx-1 me-3'>
-                            <FontAwesomeIcon className="fs-3 py-2 px-3 border border-white rounded-circle text-white icon" icon={faInstagram} />
+                        <Nav.Link href="#Instagram" className='me-3'>
+                            <FontAwesomeIcon className="fs-5 py-2 px-3 border border-white rounded-circle text-white icon" icon={faInstagram} />
                         </Nav.Link>
                     <Button className='mx-5 connectButton fs-5 ms-auto'>Let's Connect</Button>
                     </Nav>

@@ -8,7 +8,7 @@ const FooterComponent = () => {
     return (
         <Container fluid style={{backgroundColor: "black"}}>
             <Row className='d-flex flex-wrap justify-content-between mx-auto' style={{width: "80%",paddingTop: "200px"}}>
-                <Col className='text-white text-uppercase fs-1 d-flex justify-content-lg-start justify-content-xs-center align-items-center '>
+                <Col className='text-white text-uppercase fs-1 d-flex justify-content-lg-start justify-content-xs-center text-xs-center align-items-center '>
                     <p>logo</p>
                 </Col>
                 <Col className='d-flex flex-column'>
